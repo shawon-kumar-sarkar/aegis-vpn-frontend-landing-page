@@ -13,11 +13,17 @@
 
     <!-- Third Party Script -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/13ec0906de.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Tailwind CSS Style -->
     <style type="text/tailwindcss">
       @theme {
         --color-primary-color: #f53838;
+
+        --breakpoint-3xl: 125rem;
       }
     </style>
 
@@ -26,84 +32,178 @@
   </head>
   <body>
     <!-- Start Header Section -->
-    <header>
+    <header class="relative w-full h-svh flex flex-col justify-between">
       <!-- Start Nav Section -->
-      <nav class="fixed w-full py-5 lg:py-7">
-        <div class="w-[95%] md:w-11/12 lg:w-10/12 mx-auto">
-          <div class="w-full flex justify-between items-center">
+      <nav
+        class="fixed w-full h-[10vh] md:h-[12vh] lg:h-[15vh] py-5 lg:py-7 3xl:py-[2.1vw]"
+      >
+        <div class="w-[95%] md:w-11/12 lg:w-10/12 mx-auto h-full">
+          <div class="w-full h-full flex justify-between items-center">
             <div>
               <a href="#">
-                <div class="flex items-center gap-1 md:gap-2">
-                  <div class="w-6 md:w-8 xl:w-12 h-6 md:h-8 xl:h-12">
+                <div class="flex items-center gap-1 md:gap-2 3xl:gap-[0.7vw]">
+                  <div
+                    class="w-8 xl:w-12 3xl:w-[2.7vw] h-8 xl:h-12 3xl:h-[2.7vw]"
+                  >
                     <img
                       class="w-full h-full object-cover"
                       src="./assets/AegisVPN-lcon.svg"
                       alt="logo"
                     />
                   </div>
-                  <h3 class="text-xl md:text-2xl xl:text-3xl">
+                  <h3 class="text-3xl xl:text-3xl 3xl:text-[2vw]">
                     Aegis<span class="font-bold">VPN</span>
                   </h3>
                 </div>
               </a>
             </div>
             <div class="hidden lg:block">
-              <ul class="flex items-center gap-2">
-                <li class="text-base xl:text-xl">
+              <ul class="flex items-center gap-5 2xl:gap-7 3xl:gap-[1.5vw]">
+                <li class="text-base xl:text-xl 2xl:text-2xl 3xl:text-[1.3vw]">
                   <a
                     href="#"
-                    class="text-gray-500 font-medium px-2 py-1 hover:text-primary-color transition-colors duration-300"
+                    class="text-gray-500 font-medium hover:text-primary-color transition-colors duration-300"
                     >About</a
                   >
                 </li>
-                <li class="text-base xl:text-xl">
+                <li class="text-base xl:text-xl 2xl:text-2xl 3xl:text-[1.3vw]">
                   <a
                     href="#"
-                    class="text-gray-500 font-medium px-2 py-1 hover:text-primary-color transition-colors duration-300"
+                    class="text-gray-500 font-medium hover:text-primary-color transition-colors duration-300"
                     >Features</a
                   >
                 </li>
-                <li class="text-base xl:text-xl">
+                <li class="text-base xl:text-xl 2xl:text-2xl 3xl:text-[1.3vw]">
                   <a
                     href="#"
-                    class="text-gray-500 font-medium px-2 py-1 hover:text-primary-color transition-colors duration-300"
+                    class="text-gray-500 font-medium hover:text-primary-color transition-colors duration-300"
                     >Pricing</a
                   >
                 </li>
-                <li class="text-base xl:text-xl">
+                <li class="text-base xl:text-xl 2xl:text-2xl 3xl:text-[1.3vw]">
                   <a
                     href="#"
-                    class="text-gray-500 font-medium px-2 py-1 hover:text-primary-color transition-colors duration-300"
+                    class="text-gray-500 font-medium hover:text-primary-color transition-colors duration-300"
                     >Testimonial</a
                   >
                 </li>
-                <li class="text-base xl:text-xl">
+                <li class="text-base xl:text-xl 2xl:text-2xl 3xl:text-[1.3vw]">
                   <a
                     href="#"
-                    class="text-gray-500 font-medium px-2 py-1 hover:text-primary-color transition-colors duration-300"
+                    class="text-gray-500 font-medium hover:text-primary-color transition-colors duration-300"
                     >Help</a
                   >
                 </li>
               </ul>
             </div>
             <div class="hidden lg:block">
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 3xl:gap-[0.7vw]">
                 <button
-                  class="text-sm xl:text-lg font-medium px-5 xl:px-7 py-2 border-2 text-white bg-primary-color border-primary-color rounded-full cursor-pointer hover:text-black hover:bg-white transition-colors duration-300"
+                  class="text-sm xl:text-lg 3xl:text-[1.1vw] font-medium px-5 xl:px-7 3xl:px-[2.1vw] py-2 3xl:py-[0.5vw] border-2 3xl:border-[0.1vw] text-white bg-primary-color border-primary-color rounded-full cursor-pointer hover:text-black hover:bg-white transition-colors duration-300"
                 >
                   Sign In
                 </button>
                 <button
-                  class="text-sm xl:text-lg font-medium px-5 xl:px-7 py-2 border-2 border-primary-color rounded-full cursor-pointer hover:text-white hover:bg-primary-color transition-colors duration-300"
+                  class="text-sm xl:text-lg 3xl:text-[1.1vw] font-medium px-5 xl:px-7 3xl:px-[2.1vw] py-2 3xl:py-[0.5vw] border-2 3xl:border-[0.1vw] border-primary-color rounded-full cursor-pointer hover:text-white hover:bg-primary-color transition-colors duration-300"
                 >
                   Sign Up
                 </button>
               </div>
             </div>
+            <div class="block lg:hidden">
+              <div id="menu-icon">
+                <i
+                  class="fa-solid fa-bars text-3xl md:text-3xl pt-1 md:pt-0"
+                ></i>
+              </div>
+              <div
+                class="absolute top-0 right-0 w-full sm:w-2/3 md:w-1/2 h-screen bg-white drop-shadow-3xl"
+              >
+                <div class="w-11/12 mx-auto">
+                  <div class="w-full h-[10vh] md:h-[12vh] flex items-center">
+                    <div
+                      id="menu-icon"
+                      class="w-10 h-10 flex justify-center items-center bg-primary-color/15 text-primary-color rounded-full"
+                    >
+                      <i class="fa-solid fa-xmark text-3xl md:text-3xl"></i>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-10 pt-5">
+                    <div class="">
+                      <ul class="flex flex-col items-center gap-3">
+                        <li class="text-3xl">
+                          <a
+                            href="#"
+                            class="text-gray-500 font-medium px-2 py-1 active:text-primary-color transition-colors duration-300"
+                            >About</a
+                          >
+                        </li>
+                        <li class="text-3xl">
+                          <a
+                            href="#"
+                            class="text-gray-500 font-medium px-2 py-1 active:text-primary-color transition-colors duration-300"
+                            >Features</a
+                          >
+                        </li>
+                        <li class="text-3xl">
+                          <a
+                            href="#"
+                            class="text-gray-500 font-medium px-2 py-1 active:text-primary-color transition-colors duration-300"
+                            >Pricing</a
+                          >
+                        </li>
+                        <li class="text-3xl">
+                          <a
+                            href="#"
+                            class="text-gray-500 font-medium px-2 py-1 active:text-primary-color transition-colors duration-300"
+                            >Testimonial</a
+                          >
+                        </li>
+                        <li class="text-3xl">
+                          <a
+                            href="#"
+                            class="text-gray-500 font-medium px-2 py-1 active:text-primary-color transition-colors duration-300"
+                            >Help</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="w-5/6 sm:w-4/6 mx-auto flex flex-col items-center gap-1"
+                    >
+                      <button
+                        class="w-full text-base md:text-lg font-medium py-2 border-2 text-white bg-primary-color border-primary-color rounded-full cursor-pointer hover:text-black hover:bg-white transition-colors duration-300"
+                      >
+                        Sign In
+                      </button>
+                      <div
+                        class="relative w-11/12 mx-auto text-base md:text-lg font-medium text-center before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:content-[' '] before:w-2/5 before:h-[2px] before:bg-gray-500 after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:content-[' '] after:w-2/5 after:h-[2px] after:bg-gray-500"
+                      >
+                        OR
+                      </div>
+                      <button
+                        class="w-full text-base md:text-lg font-medium py-2 border-2 border-primary-color rounded-full cursor-pointer hover:text-white hover:bg-primary-color transition-colors duration-300"
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
+      <div class="w-full h-[10vh] md:h-[12vh] lg:h-[15vh] bg-red-50"></div>
       <!-- End Nav Section -->
+
+      <!-- Start Banner Section -->
+      <div class="w-full h-[50vh] bg-black"></div>
+      <!-- End Banner Section -->
+
+      <!-- End Additional Banner info Section -->
+      <div class="w-full h-[20vh] bg-black"></div>
+      <!-- End Additional Banner info Section -->
     </header>
     <!-- End Header Section -->
 
