@@ -32,7 +32,9 @@
   </head>
   <body>
     <!-- Start Header Section -->
-    <header class="relative w-full h-svh flex flex-col justify-between">
+    <header
+      class="relative w-full h-svh flex flex-col justify-between mb-10 md:mb-12 lg:mb-14 3xl:mb-[3vw]"
+    >
       <!-- Start Nav Section -->
       <nav
         class="fixed w-full h-[10vh] md:h-[12vh] lg:h-[15vh] bg-white py-5 lg:py-7 3xl:py-[2.1vw] z-50"
@@ -325,7 +327,7 @@
     <!-- Start Main Section -->
     <main>
       <!-- Start Features Section -->
-      <section class="py-16 md:py-20 lg:py-24 3xl:py-[7vw]">
+      <section class="py-10 md:py-12 lg:py-14 3xl:py-[3vw]">
         <div class="w-[95%] md:w-11/12 lg:w-10/12 mx-auto">
           <div
             class="w-full flex flex-col lg:flex-row items-center lg:items-end gap-7 lg:gap-16 xl:gap-52 3xl:gap-[10vw]"
@@ -398,61 +400,96 @@
       <!-- End Features Section -->
 
       <!-- Start Pricing Section -->
-      <section class="py-16 md:py-20 lg:py-24 3xl:py-[7vw]">
+      <section class="py-12 md:py-14 lg:py-16 3xl:py-[4vw]">
         <div class="w-[70%] sm:w-[95%] md:w-11/12 lg:w-10/12 mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-8 md:grid-cols-3 gap-5 lg:gap-10 3xl:gap-[2vw]">
-            <div class="col-span-1 sm:col-span-4 md:col-span-1 w-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300">
-              <div class="w-full h-full flex flex-col items-center justify-between gap-5 md:gap-7 3xl:gap-[1.7vw]">
-                <div class="flex flex-col items-center gap-3 md:gap-5 3xl:gap-[1.5vw]">
+          <div
+            class="w-full md:w-1/2 mx-auto text-center space-y-2 md:space-y-5 3xl:space-y-[1vw] pb-5 3xl:pb-[1vw]"
+          >
+            <div>
+              <h2 class="text-3xl lg:text-5xl 3xl:text-[3vw] font-medium">
+                Choose Your Plan
+              </h2>
+            </div>
+            <div>
+              <p class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600">
+                Let's choose the package that is best for you and explore it
+                happily and cheerfully.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-8 md:grid-cols-3 gap-5 lg:gap-10 3xl:gap-[2vw] pt-5 3xl:pt-[1vw]"
+          >
+            <div
+              class="col-span-1 sm:col-span-4 md:col-span-1 w-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
+            >
+              <div
+                class="w-full h-full flex flex-col items-center justify-between gap-5 md:gap-7 3xl:gap-[1.7vw]"
+              >
+                <div
+                  class="flex flex-col items-center gap-3 md:gap-5 3xl:gap-[1.5vw]"
+                >
                   <div class="w-32 md:w-40 3xl:w-[10vw] pt-8 3xl:pt-[2vw]">
-                    <img class="w-full h-full" src="./assets/pricing-box-img.svg" alt="box-img">
+                    <img
+                      class="w-full h-full"
+                      src="./assets/pricing-box-img.svg"
+                      alt="box-img"
+                    />
                   </div>
                   <div>
-                    <h4 class="text-lg md:text-xl 3xl:text-[1.3vw] font-medium">Free Plan</h4>
+                    <h4 class="text-lg md:text-xl 3xl:text-[1.3vw] font-medium">
+                      Free Plan
+                    </h4>
                   </div>
                   <div>
                     <ul class="flex flex-col gap-3 md:gap-5 3xl:gap-[1.5vw]">
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Unlimited Bandwitch</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Encrypted Connection</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>No Traffic Logs</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Works on All Devices</span>
-                  </li>
-                </ul>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Unlimited Bandwitch</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Encrypted Connection</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>No Traffic Logs</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Works on All Devices</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div>
-                  <div class="text-center"><h3 class="text-2xl md:text-3xl 3xl:text-[1.8vw] font-semibold pb-3">Free</h3></div>
+                  <div class="text-center">
+                    <h3
+                      class="text-2xl md:text-3xl 3xl:text-[1.8vw] font-semibold pb-3"
+                    >
+                      Free
+                    </h3>
+                  </div>
                   <div>
                     <button
                       class="text-sm xl:text-lg 3xl:text-[1.1vw] font-semibold text-primary-color px-10 xl:px-14 3xl:px-[2.5vw] py-2 3xl:py-[0.5vw] border-2 3xl:border-[0.1vw] border-primary-color rounded-full cursor-pointer hover:text-white hover:bg-primary-color transition-colors duration-300"
@@ -463,67 +500,85 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-1 sm:col-span-4 md:col-span-1 w-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300">
-              <div class="w-full h-full flex flex-col items-center justify-between gap-5 md:gap-7 3xl:gap-[1.7vw]">
-                <div class="flex flex-col items-center gap-3 md:gap-5 3xl:gap-[1.5vw]">
+            <div
+              class="col-span-1 sm:col-span-4 md:col-span-1 w-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
+            >
+              <div
+                class="w-full h-full flex flex-col items-center justify-between gap-5 md:gap-7 3xl:gap-[1.7vw]"
+              >
+                <div
+                  class="flex flex-col items-center gap-3 md:gap-5 3xl:gap-[1.5vw]"
+                >
                   <div class="w-32 md:w-40 3xl:w-[10vw] pt-8 3xl:pt-[2vw]">
-                    <img class="w-full h-full" src="./assets/pricing-box-img.svg" alt="box-img">
+                    <img
+                      class="w-full h-full"
+                      src="./assets/pricing-box-img.svg"
+                      alt="box-img"
+                    />
                   </div>
                   <div>
-                    <h4 class="text-lg md:text-xl 3xl:text-[1.3vw] font-medium">Free Plan</h4>
+                    <h4 class="text-lg md:text-xl 3xl:text-[1.3vw] font-medium">
+                      Free Plan
+                    </h4>
                   </div>
                   <div>
                     <ul class="flex flex-col gap-3 md:gap-5 3xl:gap-[1.5vw]">
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Unlimited Bandwitch</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Encrypted Connection</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Yes Traffic Logs</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Works on All Devices</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Connect Anyware</span>
-                  </li>
-                </ul>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Unlimited Bandwitch</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Encrypted Connection</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Yes Traffic Logs</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Works on All Devices</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Connect Anyware</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div>
-                  <div class="text-center"><h3 class="text-2xl md:text-3xl 3xl:text-[1.8vw] font-semibold pb-3">Free</h3></div>
+                  <div class="text-center">
+                    <h3
+                      class="text-2xl md:text-3xl 3xl:text-[1.8vw] font-semibold pb-3"
+                    >
+                      Free
+                    </h3>
+                  </div>
                   <div>
                     <button
                       class="text-sm xl:text-lg 3xl:text-[1.1vw] font-semibold text-primary-color px-10 xl:px-14 3xl:px-[2.5vw] py-2 3xl:py-[0.5vw] border-2 3xl:border-[0.1vw] border-primary-color rounded-full cursor-pointer hover:text-white hover:bg-primary-color transition-colors duration-300"
@@ -534,76 +589,94 @@
                 </div>
               </div>
             </div>
-            <div class="col-start-1 col-span-1 sm:col-start-3 sm:col-span-4 md:col-start-3 md:col-span-1 w-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300">
-              <div class="w-full h-full flex flex-col items-center justify-between gap-5 md:gap-7 3xl:gap-[1.7vw]">
-                <div class="flex flex-col items-center gap-3 md:gap-5 3xl:gap-[1.5vw]">
+            <div
+              class="col-start-1 col-span-1 sm:col-start-3 sm:col-span-4 md:col-start-3 md:col-span-1 w-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
+            >
+              <div
+                class="w-full h-full flex flex-col items-center justify-between gap-5 md:gap-7 3xl:gap-[1.7vw]"
+              >
+                <div
+                  class="flex flex-col items-center gap-3 md:gap-5 3xl:gap-[1.5vw]"
+                >
                   <div class="w-32 md:w-40 3xl:w-[10vw] pt-8 3xl:pt-[2vw]">
-                    <img class="w-full h-full" src="./assets/pricing-box-img.svg" alt="box-img">
+                    <img
+                      class="w-full h-full"
+                      src="./assets/pricing-box-img.svg"
+                      alt="box-img"
+                    />
                   </div>
                   <div>
-                    <h4 class="text-lg md:text-xl 3xl:text-[1.3vw] font-medium">Free Plan</h4>
+                    <h4 class="text-lg md:text-xl 3xl:text-[1.3vw] font-medium">
+                      Free Plan
+                    </h4>
                   </div>
                   <div>
                     <ul class="flex flex-col gap-3 md:gap-5 3xl:gap-[1.5vw]">
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Unlimited Bandwitch</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Encrypted Connection</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Yes Traffic Logs</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Works on All Devices</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Connect Anyware</span>
-                  </li>
-                  <li
-                    class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
-                      ></i></span
-                    ><span>Get New Features</span>
-                  </li>
-                </ul>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Unlimited Bandwitch</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Encrypted Connection</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Yes Traffic Logs</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Works on All Devices</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Connect Anyware</span>
+                      </li>
+                      <li
+                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                      >
+                        <span
+                          ><i
+                            class="fa-solid fa-check text-green-500 pr-2 md:pr-3 3xl:pr-[0.7vw]"
+                          ></i></span
+                        ><span>Get New Features</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div>
-                  <div class="text-center"><h3 class="text-2xl md:text-3xl 3xl:text-[1.8vw] font-semibold pb-3">Free</h3></div>
+                  <div class="text-center">
+                    <h3
+                      class="text-2xl md:text-3xl 3xl:text-[1.8vw] font-semibold pb-3"
+                    >
+                      Free
+                    </h3>
+                  </div>
                   <div>
                     <button
                       class="text-sm xl:text-lg 3xl:text-[1.1vw] font-semibold text-primary-color px-10 xl:px-14 3xl:px-[2.5vw] py-2 3xl:py-[0.5vw] border-2 3xl:border-[0.1vw] border-primary-color rounded-full cursor-pointer hover:text-white hover:bg-primary-color transition-colors duration-300"
