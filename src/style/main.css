@@ -5,3 +5,16 @@
 body {
   font-family: "Rubik", sans-serif;
 }
+
+button:focus-visible {
+  outline: none;
+}
+
+/* Nav Class */
+.open-nav {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.close-nav {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
