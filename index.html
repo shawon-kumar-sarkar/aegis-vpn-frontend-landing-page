@@ -12,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 
     <!-- Third Party Script -->
@@ -743,56 +743,167 @@
               </p>
             </div>
           </div>
-          <div class="pt-3 sm:pt-8 md:pt-12 lg:pt-16 3xl:pt-[3vw]">
-            <div id="my-keen-slider" class="keen-slider">
-              <div class="keen-slider__slide number-slide1">
-                <div
-                  class="w-full h-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
-                >
+          <div
+            class="w-full relative pt-3 sm:pt-8 md:pt-12 lg:pt-16 3xl:pt-[3vw]"
+          >
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
                   <div
-                    class="px-5 lg:px-10 3xl:px-[3vw] py-2 lg:py-5 3xl:py-[1.5vw] space-y-2 lg:space-y-3 3xl:space-y-[1.2vw]"
+                    class="w-full h-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
                   >
-                    <div class="flex justify-between items-center">
-                      <div class="flex items-center gap-2 3xl:gap-[0.7vw]">
-                        <div
-                          class="w-12 md:w-14 3xl:w-[4vw] h-12 md:h-14 3xl:h-[4vw] bg-primary-color/18 flex justify-center items-center rounded-full"
-                        >
-                          <i
-                            class="fa-solid fa-user text-lg md:text-xl lg:text-2xl 3xl:text-[2vw] text-primary-color"
-                          ></i>
+                    <div
+                      class="px-5 lg:px-10 3xl:px-[3vw] py-2 lg:py-5 3xl:py-[1.5vw] space-y-2 lg:space-y-3 3xl:space-y-[1.2vw]"
+                    >
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2 3xl:gap-[0.7vw]">
+                          <div
+                            class="w-12 md:w-14 3xl:w-[4vw] h-12 md:h-14 3xl:h-[4vw] bg-primary-color/18 flex justify-center items-center rounded-full"
+                          >
+                            <i
+                              class="fa-solid fa-user text-lg md:text-xl lg:text-2xl 3xl:text-[2vw] text-primary-color"
+                            ></i>
+                          </div>
+                          <div>
+                            <h5
+                              class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-semibold"
+                            >
+                              Viezh Robert
+                            </h5>
+                            <p
+                              class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-medium text-gray-600"
+                            >
+                              Warsaw, Poland
+                            </p>
+                          </div>
                         </div>
                         <div>
-                          <h5
-                            class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-semibold"
-                          >
-                            Viezh Robert
-                          </h5>
-                          <p
-                            class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-medium text-gray-600"
-                          >
-                            Warsaw, Poland
+                          <p class="text-base xl:text-xl 3xl:text-[1.3vw]">
+                            <span>4.5</span
+                            ><span
+                              ><i
+                                class="fa-solid fa-star text-sm xl:text-base 3xl:text-[1vw] text-amber-500 pl-1 -translate-y-[10%]"
+                              ></i
+                            ></span>
                           </p>
                         </div>
                       </div>
                       <div>
-                        <p class="text-base xl:text-xl 3xl:text-[1.3vw]">
-                          <span>4.5</span
-                          ><span
-                            ><i
-                              class="fa-solid fa-star text-sm xl:text-base 3xl:text-[1vw] text-amber-500 pl-1 -translate-y-[10%]"
-                            ></i
-                          ></span>
+                        <p
+                          class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                        >
+                          “Wow... I am very happy to use this VPN, it turned out
+                          to be more than my expectations and so far there have
+                          been no problems. LaslesVPN always the best”.
                         </p>
                       </div>
                     </div>
-                    <div>
-                      <p
-                        class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
-                      >
-                        “Wow... I am very happy to use this VPN, it turned out
-                        to be more than my expectations and so far there have
-                        been no problems. LaslesVPN always the best”.
-                      </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full h-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
+                  >
+                    <div
+                      class="px-5 lg:px-10 3xl:px-[3vw] py-2 lg:py-5 3xl:py-[1.5vw] space-y-2 lg:space-y-3 3xl:space-y-[1.2vw]"
+                    >
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2 3xl:gap-[0.7vw]">
+                          <div
+                            class="w-12 md:w-14 3xl:w-[4vw] h-12 md:h-14 3xl:h-[4vw] bg-primary-color/18 flex justify-center items-center rounded-full"
+                          >
+                            <i
+                              class="fa-solid fa-user text-lg md:text-xl lg:text-2xl 3xl:text-[2vw] text-primary-color"
+                            ></i>
+                          </div>
+                          <div>
+                            <h5
+                              class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-semibold"
+                            >
+                              Viezh Robert
+                            </h5>
+                            <p
+                              class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-medium text-gray-600"
+                            >
+                              Warsaw, Poland
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-base xl:text-xl 3xl:text-[1.3vw]">
+                            <span>4.5</span
+                            ><span
+                              ><i
+                                class="fa-solid fa-star text-sm xl:text-base 3xl:text-[1vw] text-amber-500 pl-1 -translate-y-[10%]"
+                              ></i
+                            ></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <p
+                          class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                        >
+                          “Wow... I am very happy to use this VPN, it turned out
+                          to be more than my expectations and so far there have
+                          been no problems. LaslesVPN always the best”.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full h-full border-2 3xl:border-[0.1vw] border-gray-400 rounded-xl 3xl:rounded-[0.7vw] py-5 3xl:py-[1.2vw] hover:border-primary-color transition-colors duration-300"
+                  >
+                    <div
+                      class="px-5 lg:px-10 3xl:px-[3vw] py-2 lg:py-5 3xl:py-[1.5vw] space-y-2 lg:space-y-3 3xl:space-y-[1.2vw]"
+                    >
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2 3xl:gap-[0.7vw]">
+                          <div
+                            class="w-12 md:w-14 3xl:w-[4vw] h-12 md:h-14 3xl:h-[4vw] bg-primary-color/18 flex justify-center items-center rounded-full"
+                          >
+                            <i
+                              class="fa-solid fa-user text-lg md:text-xl lg:text-2xl 3xl:text-[2vw] text-primary-color"
+                            ></i>
+                          </div>
+                          <div>
+                            <h5
+                              class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-semibold"
+                            >
+                              Viezh Robert
+                            </h5>
+                            <p
+                              class="text-base md:text-lg lg:text-xl 3xl:text-[1.4vw] font-medium text-gray-600"
+                            >
+                              Warsaw, Poland
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-base xl:text-xl 3xl:text-[1.3vw]">
+                            <span>4.5</span
+                            ><span
+                              ><i
+                                class="fa-solid fa-star text-sm xl:text-base 3xl:text-[1vw] text-amber-500 pl-1 -translate-y-[10%]"
+                              ></i
+                            ></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <p
+                          class="text-base xl:text-xl 3xl:text-[1.3vw] text-gray-600"
+                        >
+                          “Wow... I am very happy to use this VPN, it turned out
+                          to be more than my expectations and so far there have
+                          been no problems. LaslesVPN always the best”.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -807,7 +918,7 @@
 
     <!-- Third Party Script -->
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- JavaScript Links -->
     <script src="./src/script/scroll.js"></script>

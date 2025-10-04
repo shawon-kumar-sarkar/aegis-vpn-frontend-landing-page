@@ -1,15 +1,11 @@
 /* eslint-disable no-undef */
-const slider = new KeenSlider("#my-keen-slider", {
-  slides: {
-    perView: 2,
-    spacing: 30,
-  },
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
   breakpoints: {
-    "(max-width: 640px)": {
-      slides: {
-        perView: 1,
-        spacing: 20,
-      },
+    640: {
+      slidesPerView: 2,
     },
   },
 });

@@ -18,3 +18,9 @@ button:focus-visible {
 .close-nav {
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
+
+/* Swiper JS */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
